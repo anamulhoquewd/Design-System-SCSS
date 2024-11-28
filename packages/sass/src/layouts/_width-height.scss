@@ -1,0 +1,171 @@
+$widths: (
+  "w-0": 0,
+  "w-1": $spacing-4,
+  "w-2": $spacing-8,
+  "w-3": $spacing-12,
+  "w-4": $spacing-16,
+  "w-5": $spacing-20,
+  "w-6": $spacing-24,
+  "w-7": $spacing-28,
+  "w-8": $spacing-32,
+  "w-9": $spacing-36,
+  "w-10": $spacing-40,
+  "w-11": $spacing-44,
+  "w-12": $spacing-48,
+  "w-13": $spacing-52,
+  "w-14": $spacing-56,
+  "w-15": $spacing-60,
+  "w-16": $spacing-64,
+  "w-17": $spacing-68,
+  "w-18": $spacing-72,
+  "w-19": $spacing-76,
+  "w-20": $spacing-80,
+  "w-21": $spacing-84,
+  "w-22": $spacing-88,
+  "w-23": $spacing-92,
+  "w-24": $spacing-96,
+  "w-25": $spacing-100,
+  "w-26": $spacing-104,
+  "w-27": $spacing-108,
+  "w-28": $spacing-112,
+  "w-29": $spacing-116,
+  "w-30": $spacing-120,
+
+  "w-full": 100%,
+  "w-screen": 100vw,
+  "w-min": min-content,
+  "w-max": max-content,
+  "w-svw": 100svw,
+  "w-lvw": 100lvw,
+  "w-dvw": 100dvw,
+  "w-fit": fit-content,
+
+  "w-auto": auto,
+
+  "w-1_2": 50%,
+  "w-1_3": 33.3333%,
+  "w-2_3": 66.6666%,
+  "w-1_4": 25%,
+  "w-2_4": 50%,
+  "w-3_4": 75%,
+  "w-1_5": 20%,
+  "w-2_5": 40%,
+  "w-3_5": 60%,
+  "w-4_5": 80%,
+  "w-1_6": 16.6666%,
+  "w-2_6": 33.3333%,
+  "w-3_6": 50%,
+  "w-4_6": 66.6666%,
+  "w-5_6": 83.3333%,
+  "w-1_12": 8.3333%,
+  "w-2_12": 16.6666%,
+  "w-3_12": 25%,
+  "w-4_12": 33.3333%,
+  "w-5_12": 41.6666%,
+  "w-6_12": 50%,
+  "w-7_12": 58.3333%,
+  "w-8_12": 66.6666%,
+  "w-9_12": 75%,
+  "w-10_12": 83.3333%,
+  "w-11_12": 91.6666%,
+);
+
+$heights: (
+  "h-0": 0,
+  "h-1": $spacing-4,
+  "h-2": $spacing-8,
+  "h-3": $spacing-12,
+  "h-4": $spacing-16,
+  "h-5": $spacing-20,
+  "h-6": $spacing-24,
+  "h-7": $spacing-28,
+  "h-8": $spacing-32,
+  "h-9": $spacing-36,
+  "h-10": $spacing-40,
+  "h-11": $spacing-44,
+  "h-12": $spacing-48,
+  "h-13": $spacing-52,
+  "h-14": $spacing-56,
+  "h-15": $spacing-60,
+  "h-16": $spacing-64,
+  "h-17": $spacing-68,
+  "h-18": $spacing-72,
+  "h-19": $spacing-76,
+  "h-20": $spacing-80,
+  "h-21": $spacing-84,
+  "h-22": $spacing-88,
+  "h-23": $spacing-92,
+  "h-24": $spacing-96,
+  "h-25": $spacing-100,
+  "h-26": $spacing-104,
+  "h-27": $spacing-108,
+  "h-28": $spacing-112,
+  "h-29": $spacing-116,
+  "h-30": $spacing-120,
+
+  "h-full": 100%,
+  "h-screen": 100vh,
+  "h-min": min-content,
+  "h-max": max-content,
+  "h-svw": 100svh,
+  "h-lvw": 100lvh,
+  "h-dvw": 100dvh,
+  "h-fit": fit-content,
+
+  "h-auto": auto,
+
+  "h-1_2": 50%,
+  "h-1_3": 33.3333%,
+  "h-2_3": 66.6666%,
+  "h-1_4": 25%,
+  "h-2_4": 50%,
+  "h-3_4": 75%,
+  "h-1_5": 20%,
+  "h-2_5": 40%,
+  "h-3_5": 60%,
+  "h-4_5": 80%,
+  "h-1_6": 16.6666%,
+  "h-2_6": 33.3333%,
+  "h-3_6": 50%,
+  "h-4_6": 66.6666%,
+  "h-5_6": 83.3333%,
+  "h-1_12": 8.3333%,
+  "h-2_12": 16.6666%,
+  "h-3_12": 25%,
+  "h-4_12": 33.3333%,
+  "h-5_12": 41.6666%,
+  "h-6_12": 50%,
+  "h-7_12": 58.3333%,
+  "h-8_12": 66.6666%,
+  "h-9_12": 75%,
+  "h-10_12": 83.3333%,
+  "h-11_12": 91.6666%,
+);
+
+@each $key, $value in $widths {
+  .#{$key} {
+    width: $value;
+  }
+  .max-#{$key} {
+    width: $value;
+  }
+  .min-#{$key} {
+    width: $value;
+  }
+}
+
+@each $key, $value in $heights {
+  .#{$key} {
+    height: $value;
+  }
+  .min-#{$key} {
+    min-height: $value;
+  }
+
+  .max-#{$key} {
+    max-height: $value;
+  }
+}
+
+@each $key, $value in $heights {
+}

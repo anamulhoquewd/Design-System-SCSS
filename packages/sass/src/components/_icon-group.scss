@@ -1,0 +1,149 @@
+// Button group styles
+.icon-group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .icon-group-giant {
+    flex: 1 1 auto;
+    background-color: $white;
+    color: $text-accent;
+    font-size: $fs-18;
+    padding: $spacing-16 $spacing-16;
+    border-radius: none;
+    border: $primary-500 2px solid;
+    &:hover:not(:disabled):not(:active) {
+      background-color: $primary-50;
+    }
+
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 3px $primary-200;
+      z-index: 99;
+    }
+
+    &:disabled {
+      background-color: $white;
+      color: $text-disabled;
+      cursor: not-allowed;
+      border: $gray-200 2px solid;
+    }
+
+    &:active {
+      background-color: $primary-500;
+      color: $white;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius-sm;
+      border-bottom-left-radius: $border-radius-sm;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+    }
+
+    &:not(:last-child):not(:first-child) {
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  .icon-group-large {
+    flex: 1 1 auto;
+    background-color: $white;
+    color: $text-accent;
+    border-radius: none;
+    border: $primary-500 2px solid;
+    font-size: $fs-base;
+    padding: $spacing-14 $spacing-14;
+    
+    &:hover:not(:disabled):not(:active) {
+      background-color: $primary-50;
+    }
+
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 3px $primary-200;
+      z-index: 99;
+    }
+
+    &:disabled {
+      background-color: $white;
+      color: $text-disabled;
+      cursor: not-allowed;
+      border: $gray-200 2px solid;
+    }
+
+    &:active {
+      background-color: $primary-500;
+      color: $white;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius-sm;
+      border-bottom-left-radius: $border-radius-sm;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+    }
+
+    &:not(:last-child):not(:first-child) {
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  .icon-group-medium {
+    flex: 1 1 auto;
+    background-color: $white;
+    color: $text-accent;
+    border-radius: none;
+    border: $primary-500 2px solid;
+    font-size: $fs-14;
+    padding: $spacing-12 $spacing-12;
+
+    &:hover:not(:disabled):not(:active) {
+      background-color: $primary-50;
+    }
+
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 3px $primary-200;
+      z-index: 99;
+    }
+
+    &:disabled {
+      background-color: $white;
+      color: $text-disabled;
+      cursor: not-allowed;
+      border: $gray-200 2px solid;
+    }
+
+    &:active {
+      background-color: $primary-500;
+      color: $white;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius-sm;
+      border-bottom-left-radius: $border-radius-sm;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+    }
+
+    &:not(:last-child):not(:first-child) {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

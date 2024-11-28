@@ -1,0 +1,53 @@
+$loader-colors: (
+  base: $white,
+  fill: $primary-500,
+);
+
+@mixin loader-size($size) {
+  width: $size;
+  height: $size;
+  border-width: calc($size / 8);
+}
+
+.loader {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 4px solid map-get($loader-colors, fill);
+  border-top-color: map-get($loader-colors, base);
+  animation: spin 1.5s linear infinite;
+  transform: rotate(-90deg);
+
+  &-xs {
+    @include loader-size($spacing-24);
+  }
+  &-sm {
+    @include loader-size($spacing-32);
+  }
+  &-md {
+    @include loader-size($spacing-40);
+  }
+  &-lg {
+    @include loader-size($spacing-48);
+  }
+  &-xl {
+    @include loader-size($spacing-56);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

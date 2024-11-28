@@ -1,0 +1,62 @@
+// Navbar icons
+.navbar {
+  display: flex;
+  align-items: center;
+  height: $spacing-64;
+  background-color: $gray-50;
+
+  .navbar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-8 $spacing-24;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    // Base styles for text and icon
+    color: $gray-400;
+
+    .navbar-icon {
+      font-size: $fs-24;
+      color: inherit;
+    }
+
+    .helper-text {
+      font-size: 12px;
+      margin-top: 0.25rem;
+      color: $gray-400;
+    }
+
+    // Top border
+    border-top: 4px solid $gray-50;
+
+    // Selected state
+    &.is-selected {
+      color: $primary-500;
+      border-top-color: $primary-500;
+
+      .navbar-icon {
+        color: inherit;
+      }
+
+      .helper-text {
+        color: inherit;
+      }
+    }
+
+    // Hover effects (optional)
+    &:hover {
+      color: $primary-500;
+
+      .navbar-icon {
+        color: inherit;
+      }
+
+      .helper-text {
+        color: inherit;
+      }
+    }
+  }
+}

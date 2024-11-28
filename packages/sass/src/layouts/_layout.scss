@@ -1,0 +1,30 @@
+// Container Mixin
+@mixin container($max-width: 1200px, $padding: 16px) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+// Responsive Container
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-20;
+  padding-right: $spacing-20;
+
+  // Breakpoints
+  @include respond(small) {
+    max-width: 540px;
+  }
+
+  @include respond(medium) {
+    max-width: 720px;
+  }
+
+  @include respond(large) {
+    max-width: 1280px;
+  }
+}

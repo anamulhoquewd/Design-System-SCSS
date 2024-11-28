@@ -1,0 +1,248 @@
+/*=============================================
+ =            Colors            =
+ =============================================*/
+
+$black: #000;
+$black-90: #00000090;
+$black-80: #00000080;
+$black-70: #00000070;
+$black-60: #00000060;
+$black-50: #00000050;
+$black-40: #00000040;
+$black-30: #00000030;
+$black-20: #00000020;
+$black-10: #00000010;
+
+$white: #fff;
+$white-90: #ffffff90;
+$white-80: #ffffff80;
+$white-70: #ffffff70;
+$white-60: #ffffff60;
+$white-50: #ffffff50;
+$white-40: #ffffff40;
+$white-30: #ffffff30;
+$white-20: #ffffff20;
+$white-10: #ffffff10;
+
+$primary-900: #212967;
+$primary-800: #2b3587;
+$primary-700: #3745af;
+$primary-600: #4758e0;
+$primary-500: #4e61f6;
+$primary-400: #7181f8;
+$primary-300: #8895f9;
+$primary-200: #aeb6fb;
+$primary-100: #c8cefc;
+$primary-50: #edeffe;
+
+$gray-900: #131927;
+$gray-800: #212936;
+$gray-700: #394050;
+$gray-600: #4d5461;
+$gray-500: #6d717f;
+$gray-400: #9ea2ae;
+$gray-300: #d2d5db;
+$gray-200: #e5e7ea;
+$gray-100: #f3f4f6;
+$gray-50: #f9fafb;
+
+$green-900: #1c4d27;
+$green-800: #256533;
+$green-700: #308242;
+$green-600: #3da755;
+$green-500: #43b75d;
+$green-400: #69c57d;
+$green-300: #81cf92;
+$green-200: #a9deb4;
+$green-100: #c5e9cd;
+$green-50: #ecf8ef;
+
+$red-900: #641d1a;
+$red-800: #832523;
+$red-700: #a9302d;
+$red-600: #d93e39;
+$red-500: #ee443f;
+$red-400: #f16965;
+$red-300: #f4827e;
+$red-200: #f7a9a7;
+$red-100: #fac5c3;
+$red-50: #fdecec;
+
+$yellow-900: #6b4700;
+$yellow-800: #8c5e00;
+$yellow-700: #b57900;
+$yellow-600: #e89b00;
+$yellow-500: #ffaa00;
+$yellow-400: #ffbb33;
+$yellow-300: #ffc654;
+$yellow-200: #ffd88a;
+$yellow-100: #ffe5b0;
+$yellow-50: #fff7e6;
+
+$blue-900: #003f6b;
+$blue-800: #00528c;
+$blue-700: #006ab5;
+$blue-600: #0088e8;
+$blue-500: #0095ff;
+$blue-400: #33aaff;
+$blue-300: #54b8ff;
+$blue-200: #8aceff;
+$blue-100: #b0deff;
+$blue-50: #e6f4ff;
+
+$transparent: rgba(0, 0, 0, 0);
+
+/*=====  End of Colors  ======*/
+
+/*=============================================
+  =            Font family            =
+  =============================================*/
+
+$font-family-base: "Inter", sans-serif;
+
+/*=====  End of Font family  ======*/
+
+/*=============================================
+ =            Typography                       =
+ =============================================*/
+
+$fs-base: 1rem; // 16px
+$lh-base: 1.5; // 24px
+
+$h1-font-size: 3rem; // 48px
+$h2-font-size: 2.25rem; // 40px
+$h3-font-size: 1.5rem; // 32px
+$h4-font-size: 1.375rem; // 28px
+$h5-font-size: 1.25rem; // 24px
+
+$s1-font-size: 1.125rem; // 18px
+$s2-font-size: 1rem; // 16px
+
+$b1-font-size: 1rem; // 16px
+$b2-font-size: 0.875rem; // 14px
+
+$c1-font-size: 0.75rem; // 12px
+$c2-font-size: 0.625rem; // 10px
+
+$giant-font-size: 1.125rem; // 18px
+$large-font-size: 1rem; // 16
+$medium-font-size: 0.875rem; // 14px
+$small-font-size: 0.75rem; // 12px
+$tiny-font-size: 0.625rem; // 10px
+
+$fs-10: 0.625rem; // 10px
+$fs-12: 0.75rem; // 12px
+$fs-14: 0.875rem; // 14px
+$fs-18: 1.125rem; // 18px
+$fs-20: 1.25rem; // 20px
+$fs-24: 1.5rem; // 24px
+$fs-28: 1.8rem; // 28px
+$fs-32: 2rem; // 32px
+$fs-40: 2.5rem; // 40px
+$fs-48: 3rem; // 48px
+
+$lh-14: 1.4; // 14px
+$lh-16: 1.6; // 16px
+$lh-18: 1.8; // 18px
+$lh-20: 2; // 20px
+$lh-24: 2.4; // 24px
+$lh-28: 2.8; // 28px
+$lh-34: 3.4; // 34px
+$lh-38: 3.8; // 38px
+$lh-48: 4.8; // 48px
+$lh-58: 5.8; // 58px
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+/*=====  End of Typography  ======*/
+
+/*=============================================
+ =            Spacing                       =
+ =============================================*/
+
+$spacing-none: 0; // 0
+
+$spacing-4: 0.25rem; // 4px
+$spacing-6: 0.375rem; // 6px
+$spacing-8: 0.5rem; // 8px
+$spacing-10: 0.625rem; // 10px
+$spacing-12: 0.75rem; // 12px
+$spacing-14: 0.875rem; // 14px
+$spacing-16: 1rem; // 16px
+$spacing-20: 1.25rem; // 20px
+$spacing-24: 1.5rem; // 24px
+$spacing-28: 1.8rem; // 28px
+$spacing-32: 2rem; // 32px
+$spacing-36: 2.25rem; // 36px
+$spacing-40: 2.5rem; // 40px
+$spacing-44: 2.75rem; // 44px
+$spacing-48: 3rem; // 48px
+$spacing-52: 3.25rem; // 52px
+$spacing-56: 3.5rem; // 56px
+$spacing-60: 3.75rem; // 60px
+$spacing-64: 4rem; // 64px
+$spacing-68: 4.25rem; // 68px
+$spacing-72: 4.5rem; // 72px
+$spacing-76: 4.75rem; // 76px
+$spacing-80: 5rem; // 80px
+$spacing-84: 5.25rem; // 84px
+$spacing-88: 5.5rem; // 88px
+$spacing-92: 5.75rem; // 92px
+$spacing-96: 6rem; // 96px
+$spacing-100: 6.25rem; // 100px
+$spacing-104: 6.5rem; // 104px
+$spacing-108: 6.75rem; // 108px
+$spacing-112: 7rem; // 112px
+$spacing-116: 7.25rem; // 116px
+$spacing-120: 7.5rem; // 120px
+
+
+
+
+/*=====  End of Spacing             ======*/
+
+/*=============================================
+ =            Shadows            =
+ =============================================*/
+
+$shadow-100: 0px 1px 2px 0px $black-10;
+$shadow-200: 0px 2px 4px 0px $black-10;
+$shadow-300: 0px 4px 8px 0px $black-10;
+$shadow-400: 0px 8px 16px 0px $black-10;
+$shadow-500: 0px 16px 32px 0px $black-10;
+$shadow-600: 0px 32px 64px 0px $black-10;
+$shadow-700: 0px 64px 128px 0px $black-10;
+$shadow-800: 0px 128px 256px 0px $black-10;
+
+/*=====  End of Shadows  ======*/
+
+/*=============================================
+ =            Border radius            =
+ =============================================*/
+
+$border-radius-none: 0;
+$border-radius-xxxs: 0.25rem; // 4px
+$border-radius-xxs: 0.375rem; // 6px
+$border-radius-xs: 0.5rem; // 8px
+$border-radius-sm: 0.75rem; // 12px
+$border-radius-md: 1rem; // 16px
+$border-radius-lg: 1.25rem; // 20px
+$border-radius-xl: 1.5rem; // 24px
+
+/*=====  End of Border radius  ======*/
+
+/*=============================================
+ =           Button Text colors            =
+ =============================================*/
+
+$text-accent: $primary-500;
+$text-success: $green-500;
+$text-info: $blue-500;
+$text-warning: $yellow-500;
+$text-error: $red-500;
+$text-disabled: $gray-400;
+
+/*=====  End of Button Text colors  ======*/

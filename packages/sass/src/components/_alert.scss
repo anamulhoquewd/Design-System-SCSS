@@ -1,0 +1,110 @@
+// alert styles
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: $spacing-16;
+  border-radius: $border-radius-sm;
+
+  &-icon {
+    font-size: $fs-24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-content {
+    flex: 1;
+
+    &-title {
+      font-size: $s2-font-size;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    &-text {
+      font-size: $b2-font-size;
+      margin-bottom: 1rem;
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: flex-start;
+      gap: $spacing-20;
+
+      button {
+        font-size: $fs-base;
+        cursor: pointer;
+        background-color: $transparent;
+        border: none;
+        font-weight: $fw-medium;
+
+        &.btn-primary {
+          color: inherit; // Inherit color from alert variant
+        }
+
+        &.btn-secondary {
+          color: $gray-400;
+        }
+      }
+    }
+  }
+
+  // Variants for "filled" alerts
+  &--filled {
+    color: $white;
+
+    &--default {
+      background-color: $primary-500;
+    }
+
+    &--info {
+      background-color: $blue-500;
+    }
+
+    &--success {
+      background-color: $green-500;
+    }
+
+    &--error {
+      background-color: $red-500;
+    }
+
+    &--warning {
+      background-color: $yellow-500;
+    }
+  }
+
+  // Variants for "outlined" alerts
+  &--outlined {
+    &--default {
+      background-color: $primary-50;
+      border: 2px solid $primary-500;
+      color: $primary-500;
+    }
+
+    &--info {
+      border: 2px solid $blue-500;
+      background-color: $blue-50;
+      color: $blue-500;
+    }
+
+    &--success {
+      border: 2px solid $green-500;
+      background-color: $green-50;
+      color: $green-500;
+    }
+
+    &--error {
+      border: 2px solid $red-500;
+      background-color: $red-50;
+      color: $red-500;
+    }
+
+    &--warning {
+      border: 2px solid $yellow-500;
+      background-color: $yellow-50;
+      color: $yellow-500;
+    }
+  }
+}

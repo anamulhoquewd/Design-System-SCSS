@@ -1,0 +1,99 @@
+@mixin badge-icon-primary($width, $font-size) {
+  display: flex;
+  width: $width;
+  height: $width;
+  color: $white;
+  border-radius: $border-radius-xs;
+  font-size: $font-size;
+  font-weight: $fw-semibold;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  // Variants
+  &-default {
+    background-color: $primary-500;
+  }
+
+  &-success {
+    background-color: $green-500;
+  }
+
+  &-error {
+    background-color: $red-500;
+  }
+
+  &-warning {
+    background-color: $yellow-500;
+  }
+
+  &-info {
+    background-color: $blue-500;
+  }
+}
+
+@mixin badge-icon-secondary($width, $font-size) {
+  display: flex;
+  width: $width;
+  height: $width;
+  border-radius: $border-radius-xs;
+  font-size: $font-size;
+  font-weight: $fw-semibold;
+  align-items: center;
+  justify-content: center;
+
+  // Variants
+  &-default {
+    background-color: $primary-50;
+    color: $primary-500;
+    border: $primary-500 2px solid;
+  }
+
+  &-success {
+    background-color: $green-50;
+    color: $green-500;
+    border: $green-500 2px solid;
+  }
+
+  &-error {
+    background-color: $red-50;
+    color: $red-500;
+    border: $red-500 2px solid;
+  }
+
+  &-warning {
+    background-color: $yellow-50;
+    color: $yellow-500;
+    border: $yellow-500 2px solid;
+  }
+
+  &-info {
+    background-color: $blue-50;
+    color: $blue-500;
+    border: $blue-500 2px solid;
+  }
+}
+
+.badge-icon-secondary-large {
+  @include badge-icon-secondary(40px, $fs-14);
+}
+
+.badge-icon-secondary-small {
+  @include badge-icon-secondary(32px, $fs-12);
+}
+
+.badge-icon-secondary-tiny {
+  @include badge-icon-secondary(24px, $fs-10);
+}
+
+.badge-icon-primary-large {
+  @include badge-icon-primary(40px, $fs-14);
+}
+
+.badge-icon-primary-small {
+  @include badge-icon-primary(32px, $fs-12);
+}
+
+.badge-icon-primary-tiny {
+  @include badge-icon-primary(24px, $fs-10);
+}

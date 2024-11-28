@@ -1,0 +1,87 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+
+  .tooltip {
+    position: absolute;
+    background-color: $primary-500;
+    color: $white;
+    padding: $spacing-6 $spacing-8;
+    border-radius: $border-radius-xs;
+    font-size: $b2-font-size;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+  }
+
+  &:hover .tooltip,
+  &:focus-within .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  // Tooltip positions
+  &.tooltip-top .tooltip {
+    bottom: calc(100% + $spacing-6);
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+      border-width: $spacing-6 $spacing-6 0 $spacing-6;
+      border-color: $primary-500 transparent transparent transparent;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.tooltip-bottom .tooltip {
+    top: calc(100% + $spacing-6);
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+      border-width: 0 $spacing-6 $spacing-6 $spacing-6;
+      border-color: transparent transparent $primary-500 transparent;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.tooltip-left .tooltip {
+    right: calc(100% + $spacing-6);
+    top: 50%;
+    transform: translateY(-50%);
+    &::before {
+      border-width: $spacing-6 0 $spacing-6 $spacing-6;
+      border-color: transparent transparent transparent $primary-500;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.tooltip-right .tooltip {
+    left: calc(100% + $spacing-6);
+    top: 50%;
+    transform: translateY(-50%);
+    &::before {
+      border-width: $spacing-6 $spacing-6 $spacing-6 0;
+      border-color: transparent $primary-500 transparent transparent;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+    }
+  }
+}

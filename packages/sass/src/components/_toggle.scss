@@ -1,0 +1,87 @@
+$toggle-width: 42px; // Width of the toggle
+$toggle-height: 24px; // Height of the toggle
+$spacing-16: 18px; // Size of the circle inside the toggle
+
+$toggle-bg-default: #e5e7eb; // Default background color
+$toggle-bg-checked: #4a90e2; // Checked background color
+$toggle-bg-hover: #d1d5db; // Hover background color
+$toggle-ring-focus: 0 0 0 3px rgba(74, 144, 226, 0.5); // Focus ring
+$toggle-disabled: #f3f4f6; // Disabled background
+$toggle-disabled-circle: #e5e7eb; // Disabled circle color
+
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-16; // Space between toggles
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: $spacing-14; // Space between toggle and text
+    cursor: pointer;
+    font-size: $b1-font-size;
+    font-weight: $fw-medium;
+
+    &:has(input:disabled) {
+      cursor: not-allowed;
+      color: $gray-400;
+    }
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 42px;
+    height: $spacing-24;
+    background-color: $gray-200;
+    border-radius: $spacing-24 / 2; // Make it circular
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      background-color: $gray-300;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $primary-200;
+    }
+
+    &:checked {
+      background-color: $primary-500;
+
+      &::after {
+        transform: translate(16px, -9px);
+      }
+
+      &:hover {
+        background-color: $primary-700;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: $spacing-16;
+      height: $spacing-16;
+      background-color: $white;
+      border-radius: 50%; // Circle
+      position: absolute;
+      top: 50%;
+      left: 4px; // Padding from the edge
+      transform: translateY(-50%);
+      transition: transform 0.2s ease;
+    }
+
+    &:disabled {
+      background-color: $gray-100;
+    }
+  }
+
+  .toggle-title {
+    font-size: $fs-14;
+
+    &:disabled {
+      color: $gray-400;
+    }
+  }
+}

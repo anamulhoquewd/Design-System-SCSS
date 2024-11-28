@@ -1,0 +1,29 @@
+// Media Query
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+// Centering
+@mixin center($direction: both) {
+  display: flex;
+  @if $direction == both {
+    justify-content: center;
+    align-items: center;
+  } @else if $direction == horizontal {
+    justify-content: center;
+  } @else if $direction == vertical {
+    align-items: center;
+  }
+}

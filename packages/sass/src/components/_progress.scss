@@ -1,0 +1,26 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: $spacing-16;
+
+  .progress-bg {
+    width: 90%;
+    height: $spacing-8;
+    border-radius: $spacing-20;
+    overflow: hidden;
+    background-color: $primary-50;
+    cursor: pointer;
+
+    .progress-bar {
+      height: 100%;
+      background-color: $primary-500;
+      transition: width 0.3s ease;
+    }
+  }
+  .progress-percentage {
+    font-size: $b2-font-size;
+    font-weight: $fw-medium;
+    color: $gray-900;
+  }
+}

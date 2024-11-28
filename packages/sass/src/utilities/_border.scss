@@ -1,0 +1,87 @@
+/*=============================================
+=            Borders system            =
+=============================================*/
+
+// Border Map
+$border-variants: (
+  "primary": $primary-500,
+  "success": $green-500,
+  "error": $red-500,
+  "warning": $yellow-500,
+  "info": $blue-500,
+  "dark": $gray-900,
+);
+
+$border-sizes: (
+  "sm": 1px,
+  "md": 2px,
+  "lg": 4px,
+);
+
+$border-styles: (
+  "solid": solid,
+  "dashed": dashed,
+  "dotted": dotted,
+  "double": double,
+);
+
+// Mixin for Border
+@mixin border($width: 1px, $style: solid, $color: $gray-200) {
+  border: $width $style $color;
+}
+
+@mixin border-style($style) {
+  border-style: $style;
+}
+
+// Generate Border Classes
+@each $name, $color in $border-variants {
+  @each $size-name, $size-value in $border-sizes {
+    .border-#{$name}-#{$size-name} {
+      @include border($size-value, solid, $color);
+    }
+  }
+}
+
+@each $size-name, $size-value in $border-sizes {
+  .border-#{$size-name} {
+    @include border($size-value, solid, $gray-200);
+  }
+}
+
+@each $style-name, $style-value in $border-styles {
+  .border-#{$style-name} {
+    @include border-style($style-value);
+  }
+}
+
+// Rounded Borders
+.border-rounded {
+  border-radius: $border-radius-xxxs;
+}
+
+.border-rounded-sm {
+  border-radius: $border-radius-xxs;
+}
+
+.border-rounded-md {
+  border-radius: $border-radius-xs;
+}
+
+.border-rounded-lg {
+  border-radius: $border-radius-sm;
+}
+
+.border-rounded-xl {
+  border-radius: $border-radius-md;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.border-none {
+  border: none;
+}
+
+/*=====  End of Borders system  ======*/

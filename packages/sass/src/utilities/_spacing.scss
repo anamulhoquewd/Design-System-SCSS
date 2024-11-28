@@ -1,0 +1,158 @@
+/*=============================================
+=            Spacings            =
+=============================================*/
+
+$margins: (
+  0: 0,
+  1: $spacing-4,
+  2: $spacing-8,
+  3: $spacing-12,
+  4: $spacing-16,
+  5: $spacing-20,
+  6: $spacing-24,
+  7: $spacing-28,
+  8: $spacing-32,
+  9: $spacing-36,
+  10: $spacing-40,
+  11: $spacing-44,
+  12: $spacing-48,
+  13: $spacing-52,
+  14: $spacing-56,
+  15: $spacing-60,
+  16: $spacing-64,
+  17: $spacing-68,
+  18: $spacing-72,
+  19: $spacing-76,
+  20: $spacing-80,
+  21: $spacing-84,
+  22: $spacing-88,
+  23: $spacing-92,
+  24: $spacing-96,
+  25: $spacing-100,
+  26: $spacing-104,
+  27: $spacing-108,
+  28: $spacing-112,
+  29: $spacing-116,
+  30: $spacing-120,
+);
+
+@each $key, $value in $margins {
+  .m-#{$key} {
+    margin: $value;
+  }
+
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .p-#{$key} {
+    padding: $value;
+  }
+
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+}
+
+/*=====  End of Spacings  ======*/
+
+/*=============================================
+=            Gaps            =
+=============================================*/
+
+$gaps: (
+  0: 0,
+  1: $spacing-4,
+  2: $spacing-8,
+  3: $spacing-12,
+  4: $spacing-16,
+  5: $spacing-20,
+  6: $spacing-24,
+  7: $spacing-28,
+  8: $spacing-32,
+  9: $spacing-36,
+  10: $spacing-40,
+  11: $spacing-44,
+  12: $spacing-48,
+  13: $spacing-52,
+  14: $spacing-56,
+  15: $spacing-60,
+  16: $spacing-64,
+  17: $spacing-68,
+  18: $spacing-72,
+  19: $spacing-76,
+  20: $spacing-80,
+  21: $spacing-84,
+  22: $spacing-88,
+  23: $spacing-92,
+  24: $spacing-96,
+  25: $spacing-100,
+);
+
+@each $key, $value in $gaps {
+  .gap-#{$key} {
+    gap: $value;
+  }
+
+  .gap-#{$key}-x {
+    column-gap: $value;
+  }
+
+  .gap-#{$key}-y {
+    row-gap: $value;
+  }
+
+  .row-gap-#{$key} {
+    row-gap: $value;
+  }
+
+  .col-gap-#{$key} {
+    column-gap: $value;
+  }
+}
+
+/*=====  End of Gaps  ======*/
