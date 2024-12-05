@@ -1,0 +1,136 @@
+.dropdown {
+  width: 350px;
+  position: relative;
+
+  .dropdown-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-8;
+    padding: $spacing-12;
+    background-color: $white;
+    border: 2px solid $gray-200;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    font-size: $b1-font-size;
+    font-weight: $fw-medium;
+    color: $gray-900;
+    transition: border-color 0.2s ease;
+    width: 100%;
+
+    svg {
+      stroke: $gray-400;
+    }
+
+    &:hover {
+      border-color: $primary-500;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px $primary-200;
+
+      svg {
+        stroke: $primary-500;
+
+      }
+      svg:last-child {
+        transform: rotate(180deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+
+  .dropdown-list {
+    background-color: $white;
+    border-radius: $border-radius-xs;
+    overflow: hidden;
+    font-size: $b1-font-size;
+    font-weight: $fw-medium;
+    color: $gray-900;
+    transition: border-color 0.2s ease;
+    position: absolute;
+    box-shadow: $shadow-300;
+    z-index: 99;
+    width: 100%;
+    list-style-type: none;
+
+    .dropdown-item {
+      padding: $spacing-12;
+      background-color: $white;
+      cursor: pointer;
+      font-size: $b1-font-size;
+      font-weight: $fw-medium;
+      color: $gray-900;
+      transition: border-color 0.2s ease;
+      margin-top: $spacing-6;
+      margin-bottom: $spacing-6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        stroke: $gray-400;
+      }
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: $spacing-24; 
+        height: $spacing-24;
+        border: 2px solid $primary-500; 
+        border-radius: $border-radius-xs; 
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"]::after {
+        content: "";
+        position: absolute;
+        width: 6px; 
+        height: $spacing-12;
+        border: solid $white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        top:2px; 
+        left: 7px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: $primary-500;
+        border-color: $primary-500;
+      }
+
+      input[type="checkbox"]:checked::after {
+        opacity: 1;
+      }
+
+      &:hover {
+        background-color: $primary-50;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 3px $primary-200;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      &:active {
+        background-color: $primary-50;
+      }
+
+      &.active {
+        background-color: $primary-50;
+      }
+    }
+  }
+}

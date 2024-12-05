@@ -1,5 +1,5 @@
 import { Button } from "@ds.e/react";
-import { IconArrowLeft, IconArrowRight, IconArrowUp } from ".././assets/icons";
+import { IconArrowLeft, IconArrowRight, IconArrowUp } from "../../assets/icons";
 
 function ButtonGroupExample() {
   return (

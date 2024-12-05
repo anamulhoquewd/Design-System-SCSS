@@ -1,5 +1,5 @@
 import { Button } from "@ds.e/react";
-import { IconArrowLeft, IconArrowRight, IconArrowUp } from ".././assets/icons";
+import { IconArrowLeft, IconArrowRight, IconArrowUp } from "../.././assets/icons";
 
 function ButtonExample() {
   return (
@@ -7,7 +7,6 @@ function ButtonExample() {
       <h3 className="h3 semibold text-gray-900">Buttons</h3>
 
       <div className="mt-14">
-        {/* <ul className="flex gap-16 justify-end mb-4"> */}
         <ul className="grid-col-5 mb-10 justify-items-center justify-self-end w-11_12">
           <li className="">Giant</li>
           <li className="">Large</li>

@@ -1,6 +1,6 @@
 // Input Group Wrapper
 
-@mixin input-group-wrapper {
+@mixin input-main-wrapper {
   display: flex;
   flex-direction: column;
   gap: $spacing-8; // Spacing between elements
@@ -66,7 +66,6 @@
   }
 
   &:disabled {
-    background-color: $gray-400;
     cursor: not-allowed;
   }
 
@@ -94,8 +93,8 @@
 }
 
 //           Large default
-.input-group-large-primary-default {
-  @include input-group-wrapper;
+.input-large-primary-default {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -133,8 +132,8 @@
   }
 }
 //           Medium default
-.input-group-medium-primary-default {
-  @include input-group-wrapper;
+.input-medium-primary-default {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -172,9 +171,9 @@
   }
 }
 //           large secondary default
-.input-group-large-secondary-default {
+.input-large-secondary-default {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -212,9 +211,9 @@
   }
 }
 //           medium secondary default
-.input-group-medium-secondary-default {
+.input-medium-secondary-default {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -252,8 +251,8 @@
   }
 }
 //           large primary success
-.input-group-large-primary-success {
-  @include input-group-wrapper;
+.input-large-primary-success {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -284,8 +283,8 @@
   }
 }
 //           medium primary success
-.input-group-medium-primary-success {
-  @include input-group-wrapper;
+.input-medium-primary-success {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -316,10 +315,10 @@
   }
 }
 //           large secondary success
-.input-group-large-secondary-success {
+.input-large-secondary-success {
   background-color: $white;
 
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -350,10 +349,10 @@
   }
 }
 //           medium secondary success
-.input-group-medium-secondary-success {
+.input-medium-secondary-success {
   background-color: $white;
 
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -384,8 +383,8 @@
   }
 }
 //           large primary warning
-.input-group-large-primary-warning {
-  @include input-group-wrapper;
+.input-large-primary-warning {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -416,8 +415,8 @@
   }
 }
 //           medium primary warning
-.input-group-medium-primary-warning {
-  @include input-group-wrapper;
+.input-medium-primary-warning {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -448,9 +447,9 @@
   }
 }
 //           large secondary warning
-.input-group-large-secondary-warning {
+.input-large-secondary-warning {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -481,9 +480,9 @@
   }
 }
 //           medium secondary warning
-.input-group-medium-secondary-warning {
+.input-medium-secondary-warning {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -514,8 +513,8 @@
   }
 }
 //           large primary info
-.input-group-large-primary-info {
-  @include input-group-wrapper;
+.input-large-primary-info {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -546,8 +545,8 @@
   }
 }
 //           medium primary info
-.input-group-medium-primary-info {
-  @include input-group-wrapper;
+.input-medium-primary-info {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -578,9 +577,9 @@
   }
 }
 //           large secondary info
-.input-group-large-secondary-info {
+.input-large-secondary-info {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -611,9 +610,9 @@
   }
 }
 //           medium secondary info
-.input-group-medium-secondary-info {
+.input-medium-secondary-info {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -644,8 +643,8 @@
   }
 }
 //           large primary error
-.input-group-large-primary-error {
-  @include input-group-wrapper;
+.input-large-primary-error {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -676,8 +675,8 @@
   }
 }
 //           medium primary error
-.input-group-medium-primary-error {
-  @include input-group-wrapper;
+.input-medium-primary-error {
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -708,9 +707,9 @@
   }
 }
 //           large secondary error
-.input-group-large-secondary-error {
+.input-large-secondary-error {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;
@@ -741,9 +740,9 @@
   }
 }
 //           medium secondary error
-.input-group-medium-secondary-error {
+.input-medium-secondary-error {
   background-color: $white;
-  @include input-group-wrapper;
+  @include input-main-wrapper;
 
   label {
     @include input-label;

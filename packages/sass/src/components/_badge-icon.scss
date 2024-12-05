@@ -11,23 +11,23 @@
   border: none;
 
   // Variants
-  &-default {
+  &.badge-default {
     background-color: $primary-500;
   }
 
-  &-success {
+  &.badge-success {
     background-color: $green-500;
   }
 
-  &-error {
+  &.badge-error {
     background-color: $red-500;
   }
 
-  &-warning {
+  &.badge-warning {
     background-color: $yellow-500;
   }
 
-  &-info {
+  &.badge-info {
     background-color: $blue-500;
   }
 }
@@ -41,33 +41,31 @@
   font-weight: $fw-semibold;
   align-items: center;
   justify-content: center;
+  background-color: $primary-50;
+  color: $primary-500;
+  border: $primary-500 2px solid;
 
   // Variants
-  &-default {
-    background-color: $primary-50;
-    color: $primary-500;
-    border: $primary-500 2px solid;
-  }
 
-  &-success {
+  &.badge-success {
     background-color: $green-50;
     color: $green-500;
     border: $green-500 2px solid;
   }
 
-  &-error {
+  &.badge-error {
     background-color: $red-50;
     color: $red-500;
     border: $red-500 2px solid;
   }
 
-  &-warning {
+  &.badge-warning {
     background-color: $yellow-50;
     color: $yellow-500;
     border: $yellow-500 2px solid;
   }
 
-  &-info {
+  &.badge-info {
     background-color: $blue-50;
     color: $blue-500;
     border: $blue-500 2px solid;

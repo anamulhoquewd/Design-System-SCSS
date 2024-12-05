@@ -1,72 +1,75 @@
 // Badge & Chip
 
 @mixin badge-primary($padding, $font-size) {
-  display: inline-block;
   padding: $padding;
   color: $white;
-  border-radius: $border-radius-xs;
+  border-radius: $border-radius-sm;
   font-size: $font-size;
   font-weight: $fw-semibold;
   text-align: center;
   white-space: nowrap;
+  background-color: $primary-500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid $transparent;
 
   // Variants
-  &-default {
-    background-color: $primary-500;
-  }
 
-  &-success {
+  &.badge-success {
     background-color: $green-500;
   }
 
-  &-error {
+  &.badge-error {
     background-color: $red-500;
   }
 
-  &-warning {
+  &.badge-warning {
     background-color: $yellow-500;
   }
 
-  &-info {
+  &.badge-info {
     background-color: $blue-500;
   }
 }
 
 @mixin badge-secondary($padding, $font-size) {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: $padding;
-  border-radius: $border-radius-xs;
+  border-radius: $border-radius-sm;
   font-size: $font-size;
   font-weight: $fw-semibold;
   text-align: center;
   white-space: nowrap;
+  background-color: $primary-50;
+  color: $primary-500;
+  border: 1px solid $primary-500;
+  cursor: pointer;
 
   // Variants
-  &-default {
-    background-color: $primary-50;
-    color: $primary-500;
-    border: 1px solid $primary-500;
-  }
 
-  &-success {
+  &.badge-success {
     background-color: $green-50;
     color: $green-500;
     border: 1px solid $green-500;
   }
 
-  &-error {
+  &.badge-error {
     background-color: $red-50;
     color: $red-500;
     border: 1px solid $red-500;
   }
 
-  &-warning {
+  &.badge-warning {
     background-color: $yellow-50;
     color: $yellow-500;
     border: 1px solid $yellow-500;
   }
 
-  &-info {
+  &.badge-info {
     background-color: $blue-50;
     color: $blue-500;
     border: 1px solid $blue-500;

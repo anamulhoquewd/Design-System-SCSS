@@ -33,7 +33,7 @@ $toggle-disabled-circle: #e5e7eb; // Disabled circle color
     width: 42px;
     height: $spacing-24;
     background-color: $gray-200;
-    border-radius: $spacing-24 / 2; // Make it circular
+    border-radius: calc($spacing-24 / 2); // Make it circular
     position: relative;
     cursor: pointer;
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
